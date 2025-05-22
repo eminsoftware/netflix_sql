@@ -202,3 +202,10 @@ select category, count(*)
 from categorized_content_cte
 group by 1;
 ```
+
+## Findings and Conclusion
+
+- **Content Distribution:** The dataset contains a diverse range of movies and TV shows with varying ratings and genres.
+- **Common Ratings:** Insights into the most common ratings provide an understanding of the content's target audience.
+- **Geographical Insights:** Insights into the regional content distribution.
+- **Content Categorization:** Categorizing content based on specific keywords helps in understanding the nature of content available on Netflix.
