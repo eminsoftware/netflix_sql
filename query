@@ -51,10 +51,6 @@ where
 
 -- 4. Find the Top 5 Countries with the Most Content on Netflix
 
-/* SELECT COUNT(*) 
-FROM netflix 
-WHERE country LIKE '%United States%'; */
-
 select * 
 from
 (
@@ -71,8 +67,6 @@ limit 5;
 
 
 -- 5. Identify the Longest Movie
--- splits contents of duration by space (ex: 90 min into 90)
--- takes the first part (ex: 90), converts it into integer
 
 select *
 from 
@@ -188,11 +182,6 @@ limit 10;
 
 
 -- 15. Categorize Content Based on the Presence of 'Kill' and 'Violence' Keywords
-/*
-ilike '%Kill%' - match anything that contains the letters Kill (Kill, killer, KILLING, Skill, Unskilled ,The Kill Code ...)
-~* '\mKill\M' - match only the word Kill, exactly and completely, case regardless (kill, Kill., Kill!, The Kill happened ...)
-~* '\mKill' - match any word with "Kill", regardless of case. (Kill, killer, killing, killzone, KILLLER ...)
-*/
 
 with categorized_content_cte as
 (
